@@ -12,7 +12,7 @@ def create_command(project_name):
     """
     current_dir = Path.cwd()
     project_dir = current_dir / project_name
-    templates_dir = Path(__file__).parent.parent.parent / "template"
+    templates_dir = Path(__file__).parent.parent / "template"
 
     if project_dir.exists():
         click.echo(f"Error: The folder '{project_name}' already exists.")
@@ -20,10 +20,10 @@ def create_command(project_name):
 
     try:
         project_dir.mkdir()
-        click.echo(f"Created folder: {project_dir}")
-
         shutil.copytree(templates_dir, project_dir, dirs_exist_ok=True)
-        click.echo(f"Copied files from {templates_dir} to {project_dir}")
+        (project_dir / "content" / "assets").mkdir(parents=True, exist_ok=True)
+        (project_dir / "content" / "posts").mkdir(parents=True, exist_ok=True)
+        click.echo(f"{project_dir} created.")
 
     except Exception as e:
         click.echo(f"Error while creating the project: {e}")

@@ -5,7 +5,7 @@
       "name": "Genopen create .test_do_delete",
       "type": "debugpy",
       "request": "launch",
-      "program": "${workspaceFolder}/src/cli.py",
+      "program": "${workspaceFolder}/src/genopen/cli.py",
       "console": "integratedTerminal",
       "args": ["create", ".test_to_delete"]
     },
@@ -13,7 +13,7 @@
       "name": "Genopen add",
       "type": "debugpy",
       "request": "launch",
-      "program": "${workspaceFolder}/src/cli.py",
+      "program": "${workspaceFolder}/src/genopen/cli.py",
       "console": "integratedTerminal",
       "args": ["add", "nom_du_post"],
       "cwd": "${workspaceFolder}/.test_to_delete"
@@ -22,7 +22,7 @@
       "name": "Genopen build",
       "type": "debugpy",
       "request": "launch",
-      "program": "${workspaceFolder}/src/cli.py",
+      "program": "${workspaceFolder}/src/genopen/cli.py",
       "console": "integratedTerminal",
       "args": ["build"],
       "cwd": "${workspaceFolder}/.test_to_delete"
