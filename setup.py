@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="genopen",
-    version="1.0.0",
+    version="1.1.0",
     author="Mathieu Bourgois",
     author_email="bourgois.mathieu+genopen@gmail.com",
     description="Markdown to blog generator",
