@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Genopen Logo](./logo.ico)
+![Genopen Logo](https://raw.githubusercontent.com/MathieuBourgois/genopen/main/logo.ico)
 
 </div>
 

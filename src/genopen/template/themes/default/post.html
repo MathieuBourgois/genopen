@@ -23,11 +23,7 @@
       <header class="header">
         <div class="header-left">
           <a href="/" class="blog-title">
-            <img
-              src="/assets/logo.png"
-              alt="Logo"
-              class="header-logo"
-            />
+            <img src="/assets/logo.png" alt="Logo" class="header-logo" />
             <div>
               <h1>{{blog_name}}</h1>
               <p>{{blog_description}}</p>
@@ -48,7 +44,7 @@
       </header>
 
       <main class="blog-post">
-        <button onclick="window.history.back()" class="back-button">
+        <button onclick="window.location.href='/'" class="back-button">
           ← Back
         </button>
 
@@ -64,6 +60,10 @@
         <article class="post-container">
           <article class="post-content">{{markdown}}</article>
         </article>
+
+        <button onclick="window.location.href='/'" class="back-button">
+          ← Back
+        </button>
       </main>
     </div>
 
